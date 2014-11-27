@@ -5,6 +5,7 @@
 <title>無題ドキュメント</title>
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/ro.js"></script>
+<script src="js/ab.js"></script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
 
@@ -14,7 +15,7 @@
 	リハビリ件GitHubの練習用
 </p>
 
-<h2><a href="../js/ro.js">ロールオーバースクリプト</a></h2>
+<h2><a href="js/ro.js">ロールオーバースクリプト</a></h2>
 <p>
 	画像にclass="hover"を指定している場合、マウスオーバーすると"_h"を加えた画像に差し替える。<br>
 	"hover"と"_h"は任意に変更可能。
@@ -36,7 +37,30 @@
 	</ul>
 </div>
 
+<h2><a href="js/ab.js">オートブランク</a></h2>
+<p>
+	自サイト以外のドメインに対して自動でtarget="_blank"を付ける。<br>
+	特定URLに特定のtargetも設定可能。
+</p>
 
+<h3>ポイント</h3>
+<ul>
+	<li>要jQuery（新し目がいいかも）</li>
+	<li>サイトごとに開くウィンドウを調整可能</li>
+	<li>_selfを使えばホワイトリストにもできる。</li>
+</ul>
+
+<div class="block02">
+	<ul>
+		<li><a href="http://google.com">http://google.com</a></li>
+		<li><a href="http://msn.co.jp">http://msn.co.jp</a></li>
+		<li><a href="http://yahoo.co.jp">http://yahoo.co.jp</a></li>
+		<li><a href="http://www.ebay.com/" target="test">http://www.ebay.com</a></li>
+		<li><a href="index.html" target="test">このページ</a></li>
+		<li><a href="index.html">このページ</a></li>
+		<!-- li><a href="http://test.niimi.com/index.html">このページ</a></li -->
+	</ul>
+</div>
 
 </body>
 </html>
