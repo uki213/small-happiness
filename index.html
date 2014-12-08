@@ -12,65 +12,66 @@
 <body>
 <h1>小ネタ部屋</h1>
 <p>
-	リハビリ件GitHubの練習用
+    リハビリ件GitHubの練習用
 </p>
 
 <h2><a href="js/ro.js">ロールオーバースクリプト</a></h2>
 <p>
-	画像にclass="hover"を指定している場合、マウスオーバーすると"_h"を加えた画像に差し替える。<br>
-	"hover"と"_h"は任意に変更可能。
+    画像にclass="hover"を指定している場合、マウスオーバーすると"_h"を加えた画像に差し替える。<br>
+    "hover"と"_h"は任意に変更可能。
 </p>
 
 <h3>ポイント</h3>
 <ul>
-	<li>要jQuery（新し目がいいかも）</li>
-	<li>ちゃんと画像先読み</li>
-	<li>某Hさんが作ったものよりコードが長い（汗）</li>
+    <li>要jQuery（新し目がいいかも）</li>
+    <li>ちゃんと画像先読み</li>
+    <li>某Hさんが作ったものよりコードが長い（汗）</li>
 </ul>
 
 <p>img.hoverの場合</p>
 <div class="block01">
-	<ul>
-		<li><img src="img/blue.png" width="160" height="60" alt="" class="hover" /></li>
-		<li><img src="img/green.png" width="160" height="60" alt="" class="hover" /></li>
-		<li><img src="img/red.png" width="160" height="60" alt="" class="hover" /></li>
-		<li><img src="img/yellow.png" width="160" height="60" alt="" class="hover" /></li>
-	</ul>
+    <ul>
+        <li><img src="img/blue.png" width="160" height="60" alt="" class="hover" /></li>
+        <li><img src="img/green.png" width="160" height="60" alt="" class="hover" /></li>
+        <li><img src="img/red.png" width="160" height="60" alt="" class="hover" /></li>
+        <li><img src="img/yellow.png" width="160" height="60" alt="" class="hover" /></li>
+    </ul>
 </div>
 
 <p>ul.hover > li > imgの場合</p>
-<div class="block01">
-	<ul class="hover">
-		<li><img src="img/blue.png" width="160" height="60" alt="" /></li>
-		<li><img src="img/green.png" width="160" height="60" alt="" /></li>
-		<li><img src="img/red.png" width="160" height="60" alt="" /></li>
-		<li><img src="img/yellow.png" width="160" height="60" alt="" /></li>
-	</ul>
+<div class="block01 cr">
+    <ul class="hover">
+        <li><a href="http://google.com"><img src="img/blue.png" width="160" height="60" alt="" /></a></li>
+        <li><a href="http://msn.co.jp"><img src="img/green.png" width="160" height="60" alt="" /></a></li>
+        <li><a href="http://www.ebay.com/"><img src="img/red.png" width="160" height="60" alt="" /></a></li>
+        <li><a href="./index.html"><img src="img/yellow.png" width="160" height="60" alt="" /></a></li>
+    </ul>
 </div>
 
 <h2><a href="js/ab.js">オートブランク</a></h2>
 <p>
-	自サイト以外のドメインに対して自動でtarget="_blank"を付ける。<br>
-	特定URLに特定のtargetも設定可能。
+    自サイト以外のドメインに対して自動でtarget="_blank"を付ける。<br>
+    特定URLに特定のtargetも設定可能。
 </p>
 
 <h3>ポイント</h3>
 <ul>
-	<li>要jQuery（新し目がいいかも）</li>
-	<li>サイトごとに開くウィンドウを調整可能</li>
-	<li>_selfを使えばホワイトリストにもできる。</li>
+    <li>要jQuery（新し目がいいかも）</li>
+    <li>サイトごとに開くウィンドウを調整可能</li>
+    <li>_selfを使えばホワイトリストにもできる。</li>
 </ul>
 
-<div class="block02">
-	<ul>
-		<li><a href="http://google.com">http://google.com</a></li>
-		<li><a href="http://msn.co.jp">http://msn.co.jp</a></li>
-		<li><a href="http://yahoo.co.jp">http://yahoo.co.jp</a></li>
-		<li><a href="http://www.ebay.com/" target="test">http://www.ebay.com</a></li>
-		<li><a href="index.html" target="test">このページ</a></li>
-		<li><a href="index.html">このページ</a></li>
-		<!-- li><a href="http://test.niimi.com/index.html">このページ</a></li -->
-	</ul>
+<div class="block02 cr">
+    <ul>
+        <li><a href="http://google.com">http://google.com</a></li>
+        <li><a href="http://msn.co.jp">http://msn.co.jp</a></li>
+        <li><a href="http://yahoo.co.jp">http://yahoo.co.jp</a></li>
+        <li><a href="http://www.ebay.com/" target="test">http://www.ebay.com</a></li>
+        <li><a href="index.html" target="test">このページ</a></li>
+        <li><a href="index.html">このページ</a></li>
+        <li><a href="thttp://127.0.0.1:55312/index.html">このページ</a></li>
+        <!-- li><a href="http://test.niimi.com/index.html">このページ</a></li -->
+    </ul>
 </div>
 
 </body>
