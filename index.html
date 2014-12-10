@@ -4,8 +4,33 @@
 <meta charset="utf-8">
 <title>無題ドキュメント</title>
 <script src="js/jquery-2.1.1.min.js"></script>
-<script src="js/ro.js"></script>
-<script src="js/ab.js"></script>
+<script src="js/rollover/ro.js"></script>
+<script src="js/current/cr.js"></script>
+<script src="js/autoblank/ab.js"></script>
+<script>
+(function($){
+    $(document).ready(function(){
+
+        // ### RpllOver Script.js ###
+        $('img.hover,.hover img').rollover({
+             add_rollover:"_h"
+        });
+
+        // ### Current Check Script ###
+        $('.cr a').currentlink({
+            add_class:'current',
+            add_current:'_cr'
+        });
+
+        // ### Auto Blank ###
+        $('a').autoblank({
+            'http://google.com':'ggl',
+            'http://msn.co.jp':'msn',
+            'http://yahoo.co.jp':'_self'
+        });
+    });
+})(jQuery);
+</script>
 <link rel="stylesheet" type="text/css" href="css/common.css">
 </head>
 
@@ -15,7 +40,7 @@
     リハビリ件GitHubの練習用
 </p>
 
-<h2><a href="js/ro.js">ロールオーバースクリプト</a></h2>
+<h2><a href="js/rollover/ro.js">ロールオーバースクリプト</a></h2>
 <p>
     画像にclass="hover"を指定している場合、マウスオーバーすると"_h"を加えた画像に差し替える。<br>
     "hover"と"_h"は任意に変更可能。
